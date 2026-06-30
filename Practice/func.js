@@ -27,9 +27,41 @@ function userName(username){
 }
 console.log(userName('Hemanta'));
 
-function sum (num1, num2){
+
+function addNumbers (num1, num2){
 
     return num1 + num2
 
 }
-console.log();
+//const result = addNumbers(6, 8)
+//console.log(result);
+
+function subNumbers (N1, N2){
+
+    if(N1<N2){
+        console.log('first numgebhir');
+        return
+        
+    }
+
+    return N1 - N2
+
+}
+//const result = subNumbers(9, 6)
+//console.log(result);
+
+function multi(num1, num2){
+
+    return num1 * num2
+
+}
+
+//const result = multi(9, 7)
+//console.log(result);
+
+function square(num1, num2){
+    return num1 ** num2
+}
+//const result = square(7, 2)
+//console.log(result);
+
