@@ -1,4 +1,4 @@
-//const tinderUser = new Object()
+/*//const tinderUser = new Object()
 const tinderUser = {}
 tinderUser.id = "324678v"
 tinderUser.name = "Sammy"
@@ -49,5 +49,31 @@ const users = [
 console.log(tinderUser);
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('loggedIn'));
+console.log(tinderUser.hasOwnProperty('loggedIn'));*/
+
+const course = {
+    coursename: 'JS in Hindi',
+    price: '999',
+    courseInstructor: 'Hitesh'
+}
+
+const {courseInstructor: Instructor} = course
+console.log(Instructor);
+//This is called distructuring objects 
+
+
+//JSon
+
+{
+    'name': 'Harry', 
+    'coursename': 'efjef',
+    'price': 'free'
+}
+
+[
+    {},
+    {},
+    {}
+]
+
 
