@@ -1,3 +1,4 @@
+/*
 function sayHello() {
     console.log('Hello Hemanta');
     
@@ -65,3 +66,21 @@ function square(num1, num2){
 //const result = square(7, 2)
 //console.log(result);
 
+function createPlayer(){
+    
+}
+*/
+
+
+//Easy
+//1
+function friends (...dudes){
+    return dudes;
+}
+
+console.log(friends('Hemanta', 'Ripan', 'Ranajit'));
+
+//2
+function totalmarks(){
+
+}
