@@ -31,3 +31,26 @@ switch (month) {
         
         break;
 }
+
+const day = 3
+switch (day) {
+   case 1:
+      console.log('1st day');
+ 
+      break;
+
+   case 2:
+      console.log('2nd day');
+ 
+      break;
+
+   case 3:
+      console.log('3rd day');
+ 
+      break;   
+
+
+
+   default:
+      break;
+}
