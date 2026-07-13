@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dream Garage | DOM Practice</title>
+</head>
+
+<body style="background-color: #111; color: white; font-family: Arial;">
+
+    <div class="dream-garage">
+
+        <h1>HEMANTA'S DREAM GARAGE</h1>
+
+        <div class="bike-list">
+
+            <div class="bike">
+                <h2>KTM 390 Duke</h2>
+                <p>KTM</p>
+                <p>Naked</p>
+                <p>Power: 46 PS</p>
+                <p>Status: Dream Bike</p>
+            </div>
+
+            <div class="bike">
+                <h2>Triumph Street Triple 765 RS</h2>
+                <p>Triumph</p>
+                <p>Streetfighter</p>
+                <p>Power: 130 PS</p>
+                <p>Status: Ultimate Goal</p>
+            </div>
+
+            <div class="bike">
+                <h2>Kawasaki Z900</h2>
+                <p>Kawasaki</p>
+                <p>Naked</p>
+                <p>Power: 125 PS</p>
+                <p>Status: Locked</p>
+            </div>
+
+            <div class="bike">
+                <h2>Ducati Streetfighter V4</h2>
+                <p>Ducati</p>
+                <p>Streetfighter</p>
+                <p>Power: 214 PS</p>
+                <p>Status: Locked</p>
+            </div>
+
+            <div class="bike">
+                <h2>Aprilia Tuono V4</h2>
+                <p>Aprilia</p>
+                <p>Hyper Naked</p>
+                <p>Power: 180 PS</p>
+                <p>Status: Locked</p>
+            </div>
+
+        </div>
+
+        <div class="garage-message">
+            <h2>MISSION</h2>
+            <p>Learn. Build. Earn. Ride.</p>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+
+    const garage = document.querySelector(".dream-garage")
+    //console.log(garage);
+    const bikeList = garage.children[1]
+    //console.log(bikeList);
+    //console.log(bikeList.children.length);
+    // console.log(bikeList.firstElementChild.innerHTML);
+    // console.log(bikeList.lastElementChild);
+    const duke = bikeList.firstElementChild
+    // console.log(duke.children[0].innerHTML);
+    // console.log(duke.children[1].innerHTML);
+    // console.log(duke.children[2].innerHTML);
+    // console.log(duke.children[3].innerHTML);
+    // console.log(duke.children[4].innerHTML);
+    const streetTripple = bikeList.children[1]
+    // console.log(streetTripple.children[0].innerHTML);
+    // console.log(streetTripple.children[3].innerHTML);
+
+    for (let i=0; i<bikeList.children.length; i++){
+        const bike = bikeList.children[i]
+        console.log(`Bike: ${bike.children[0].innerHTML} || Bike ${bike.children[3].innerHTML}`);
+
+    }
+
+    for(let i=0; i<bikeList.children.length; i++){
+        const bike = bike.children[i]
+        bike.children[0].style.fontSize = "30px"
+    }
+
+
+</script>
+
+</html>
