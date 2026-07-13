@@ -70,34 +70,35 @@
 <script>
 
     const garage = document.querySelector(".dream-garage")
-    //console.log(garage);
     const bikeList = garage.children[1]
-    //console.log(bikeList);
-    //console.log(bikeList.children.length);
-    // console.log(bikeList.firstElementChild.innerHTML);
-    // console.log(bikeList.lastElementChild);
-    const duke = bikeList.firstElementChild
-    // console.log(duke.children[0].innerHTML);
-    // console.log(duke.children[1].innerHTML);
-    // console.log(duke.children[2].innerHTML);
-    // console.log(duke.children[3].innerHTML);
-    // console.log(duke.children[4].innerHTML);
-    const streetTripple = bikeList.children[1]
-    // console.log(streetTripple.children[0].innerHTML);
-    // console.log(streetTripple.children[3].innerHTML);
+    for (let i=0; i < bikeList.children.length; i++){
 
-    for (let i=0; i<bikeList.children.length; i++){
         const bike = bikeList.children[i]
-        console.log(`Bike: ${bike.children[0].innerHTML} || Bike ${bike.children[3].innerHTML}`);
+        const bikeName = bike.children[0]
+        const bikeType = bike.children[2].innerHTML
+        const bikePower = bike.children[3].innerHTML
+        const bikeStatus = bike.children[4].innerHTML
+        console.log(`Bike Name: ${bikeName.innerHTML} || ${bikePower}`);
+        bikeName.style.fontSize = "25px"
+        if (bikeType === "Naked"){
+            bikeName.style.color = "orange"
+        } else if (bikeType === "Streetfighter"){
+            bikeName.style.color = "red"
+        } else {
+            bikeName.style.color = "lightblue"
+        }
+
+        if (bikeStatus === "Status: Dream Bike"){
+            bike.style.backgroundColor = "darkred"
+        } else if (bikeStatus === "Status: Ultimate Goal"){
+            bike.style.backgroundColor = "darkorange"
+        } else {
+            bike.style.backgroundColor = "green"
+        }
+        
 
     }
-
-    for(let i=0; i<bikeList.children.length; i++){
-        const bike = bike.children[i]
-        bike.children[0].style.fontSize = "30px"
-    }
-
-
+    
 </script>
 
 </html>
